@@ -9,7 +9,7 @@ This template includes bootstrap and jQuery
 1. Clone or download the repo
 1. Open a terminal and `cd` to this folder
     * For MacOS, open Terminal
-    * For Windows, open the NodeJS Application
+    * For Windows, open Powershell or Command Prompt
 1. Run the command `npm install`
 
 ## Usage
