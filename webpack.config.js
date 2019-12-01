@@ -41,8 +41,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, `dist`),
-    filename: `[name].js`,
-    publicPath: `dist/`
+    filename: `[name].js`
   },
   plugins: [
     new MiniCssExtractPlugin({
