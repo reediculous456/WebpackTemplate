@@ -12,7 +12,18 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.(jpe?g|png|gif|svg)$/, use: `file-loader?name=assets/[name].[ext]&publicPath=../dist/` },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: `file-loader`,
+            options: {
+              name: `[name].[ext]`,
+              outputPath: `assets`,
+            }
+          }
+        ]
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
