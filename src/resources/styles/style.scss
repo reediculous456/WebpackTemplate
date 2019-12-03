@@ -1,5 +1,7 @@
 @import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+$meme: url('../images/meme.jpg');
+
 body {
   margin-left: 5%;
   margin-right: 5%;
@@ -11,4 +13,9 @@ header h1 {
   text-align: center;
   color: red;
   margin: 1rem;
+}
+
+.meme {
+  content: $meme;
+  width: 50%;
 }
