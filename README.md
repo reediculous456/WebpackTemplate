@@ -18,7 +18,7 @@ __This template includes [Bootstrap 4.3.1](https://getbootstrap.com/docs/4.3/lay
     * For Windows, open Powershell or Command Prompt
     * Alternatively, use the integrated terminal in VS Code
 1. Run the command `npm install`
-    * If you have windows, you may need to have [Python2.X](https://www.python.org/download/releases/2.0/#download) installed to run this command
+    * If you have windows, you may need to have [Python2.X](https://www.python.org/downloads/release/python-2717/) installed to run this command
 
 ## Usage
 
