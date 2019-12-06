@@ -1,14 +1,12 @@
 const path = require(`path`);
 const MiniCssExtractPlugin = require(`mini-css-extract-plugin`);
+const HtmlWebpackPlugin = require(`html-webpack-plugin`);
 const { ProvidePlugin } = require(`webpack`);
 
 module.exports = {
   mode: `production`, // set to `production` for minified/uglified code, `development` for not
   entry: {
     scripts: `./src/index.js`,
-  },
-  devServer: {
-    contentBase: `./dist`,
   },
   module: {
     rules: [
@@ -34,7 +32,12 @@ module.exports = {
         use: [
           { loader: MiniCssExtractPlugin.loader },
           `css-loader`,
-          `sass-loader`,
+          {
+            loader: `sass-loader`,
+            options: {
+              sourceMap: true
+            }
+          }
         ],
       },
     ]
@@ -51,6 +54,10 @@ module.exports = {
     new ProvidePlugin({
       $: `jquery`,
       jQuery: `jquery`
+    }),
+    new HtmlWebpackPlugin({
+      template: `./src/index.html`,
+      filename: `index.html`
     })
   ],
   performance: { hints: false }

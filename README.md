@@ -25,7 +25,7 @@ __This template includes [Bootstrap 4.3.1](https://getbootstrap.com/docs/4.3/lay
 1. Build the project
     * Run the command `npm run build` to compile the project one time
     * Run the command `npm run watch` to automatically recompile the project every time you save
-1. Open `./index.html` in your web browser
+1. Open `./dist/index.html` in your web browser
 
 ## Included Libraries
 ### Bootstrap
